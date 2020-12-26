@@ -1,6 +1,6 @@
 {
   "name": "quote-lib",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "get motivational,funny and famous quotes",
   "main": "server.js",
   "bin": "server.js",

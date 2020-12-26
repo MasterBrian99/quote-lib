@@ -1,1 +1,36 @@
-"use strict";const data=require("./data/quote.json"),getRandomInt=t=>Math.floor(Math.random()*t),getRandom=()=>data[getRandomInt(data.length)],getByCategory=t=>{const a=[];for(let e=0;e<data.length;e++)data[e].category.includes(t)&&a.push(data[e]);return a[getRandomInt(a.length)]},getByAuthor=t=>{const a=[];for(let e=0;e<data.length;e++)data[e].author.includes(t)&&a.push(data[e]);return a[getRandomInt(a.length)]};module.exports={getRandom:getRandom,getByCategory:getByCategory,getByAuthor:getByAuthor};
+'use strict';
+const data = require('./data/quote.json');
+
+const getRandomInt = lng => {
+    return Math.floor(Math.random() * lng);
+}
+
+const getRandom = () => {
+    return data[getRandomInt(data.length)];
+}
+
+const getByCategory = (category) => {
+    const ByCategory = [];
+    for (let i = 0; i < data.length; i++) {
+        if (data[i].category.includes(category)) {
+            ByCategory.push(data[i]);
+        }
+    }
+    return ByCategory[getRandomInt(ByCategory.length)];
+}
+
+const getByAuthor = (author) => {
+    const byAuthor = [];
+    for (let i = 0; i < data.length; i++) {
+        if (data[i].author.includes(author)) {
+            byAuthor.push(data[i]);
+        }
+    }
+    return byAuthor[getRandomInt(byAuthor.length)];
+}
+
+module.exports = {
+    getRandom,
+    getByCategory,
+    getByAuthor
+}
