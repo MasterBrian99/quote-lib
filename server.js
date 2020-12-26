@@ -5,7 +5,6 @@ const getRandomInt = lng => {
     return Math.floor(Math.random() * lng);
 }
 
-//console.log(data.length);
 const getRandom = () => {
     return data[getRandomInt(data.length)];
 }
@@ -20,8 +19,18 @@ const getByCategory = (category) => {
     return ByCategory[getRandomInt(ByCategory.length)];
 }
 
+const getByAuthor = (author) => {
+    const byAuthor = [];
+    for (let i = 0; i < data.length; i++) {
+        if (data[i].author.includes(author)) {
+            byAuthor.push(data[i]);
+        }
+    }
+    return byAuthor[getRandomInt(byAuthor.length)];
+}
 
 module.exports = {
     getRandom,
-    getByCategory
+    getByCategory,
+    getByAuthor
 }

@@ -1,14 +1,32 @@
 {
   "name": "quote-lib",
   "version": "1.0.0",
-  "description": "Hello",
+  "description": "get motivational,funny and famous quotes",
   "main": "server.js",
   "bin": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "quote",
+    "npm",
+    "quotes",
+    "random",
+    "random quotes",
+    "get quotes",
+    "javascript",
+    "npm js",
+    "node"
+  ],
+  "author": "Pasindu P Konghawaththa",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasterBrian99/quote-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MasterBrian99/quote-lib"
+  },
+  "homepage": "https://github.com/MasterBrian99/quote-lib#readme"
 }
