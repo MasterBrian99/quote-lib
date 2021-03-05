@@ -18,12 +18,14 @@
 ### 1.use git to follow this process.If you don't have git on your machine,install it [https://git-scm.com/](https://git-scm.com/)
 
 
-### 2.Fork this repository ![22](./images/fork.png)
+### 2.Fork this repository
+ ![22](./images/fork.png)
 
 Fork this repository by clicking on the fork button on the top of this page. This will create a copy of this repository in your account.
 
 
-### 3.Clone the repository  ![22](./images/clone.png)
+### 3.Clone the repository 
+ ![22](./images/clone.png)
 
 Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the copy to clipboard icon.
 
@@ -51,8 +53,12 @@ make sure you are in new branch
 ```
  $ git branch --show-current
 ```
+
 it will show you something like this
+
+
  ![22](./images/branch.png)
+
 
 #### (remember do not modified the main branch)
 
@@ -90,6 +96,7 @@ $ git push origin add-your-branch-name
 ```
 
 #### If you go to your repository on GitHub, you'll see a `Compare & pull request button`. Click on that button.
+
 
 
  ![22](./images/push.png)
