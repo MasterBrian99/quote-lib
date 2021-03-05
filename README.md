@@ -70,3 +70,5 @@ $ console.log(quote);
 > programming
 
 ### Pull requests are welcome.
+
+#### please refer the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
