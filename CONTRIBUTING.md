@@ -59,6 +59,19 @@ it will show you something like this
 
 ### 5.Make necessary changes and commit those changes
 
+```
+how to add a new quote.
+copy this code and make  necessary changes.then add it to data.json file.
+
+{
+    "category":["category1","category2"],
+    "quote":"full quote",
+    "author":"author name"
+}
+```
+
+
+
 
 ```
  $ git add .
