@@ -1,12 +1,18 @@
 {
   "name": "quote-lib",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "get motivational,funny and famous quotes",
-  "main": "server.js",
-  "bin": "server.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "keywords": [
     "quote",
@@ -28,5 +34,10 @@
   "bugs": {
     "url": "https://github.com/MasterBrian99/quote-lib"
   },
-  "homepage": "https://github.com/MasterBrian99/quote-lib#readme"
+  "homepage": "https://github.com/MasterBrian99/quote-lib#readme",
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.6"
+  }
 }
