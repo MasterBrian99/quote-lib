@@ -8,19 +8,17 @@
 $ npm i quote-lib --save
 ```
 
-## Usage
-
-```sh
-$ const quotes=require('quote-lib');
-```
-
 ##### get a random quote
 
 ---
 
 ```sh
+import {getRandomQuote } from "quote-lib";
+```
+
+```sh
 $ const quote=quotes.getRandom();
-$ console.log(quote);
+$   console.log(getRandomQuote());
 //result
     {
         "category": [

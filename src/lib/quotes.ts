@@ -1,11 +1,10 @@
-export const quoteLength: number = 10;
-
 export type QuoteType = {
   id: number;
   text: string;
   author: string;
   category: string[];
 };
+export const quoteLength = 10;
 
 const quotes: QuoteType[] = [
   {
