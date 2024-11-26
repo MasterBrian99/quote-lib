@@ -1,6 +1,6 @@
 {
   "name": "quote-lib",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0-beta.3",
   "description": "get motivational,funny and famous quotes",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "tsup --minify terser",
     "dev": "tsup --watch",
     "test": "vitest run",
     "test:watch": "vitest",
@@ -39,6 +39,7 @@
   "homepage": "https://github.com/MasterBrian99/quote-lib#readme",
   "devDependencies": {
     "@types/node": "^22.10.0",
+    "terser": "^5.36.0",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2",
     "vitest": "^2.1.6"
