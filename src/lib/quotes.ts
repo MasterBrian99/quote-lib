@@ -4,7 +4,7 @@ export type QuoteType = {
   author: string;
   category: string[];
 };
-export const quoteLength = 10;
+export const quoteLength = 16;
 
 const quotes: QuoteType[] = [
   {
@@ -66,6 +66,42 @@ const quotes: QuoteType[] = [
     text: "I'm not a great programmer; I'm just a good programmer with great habits.",
     author: "Kent Beck",
     category: ["programming"],
+  },
+  {
+    id: 11,
+    text: "The more you sweat in peace, the less you bleed in war.",
+    author: "Norman Schwarzkopf",
+    category: ["motivation", "wisdom"],
+  },
+  {
+    id: 12,
+    text: "Two possibilities exist: either we are alone in the Universe or we are not. Both are equally terrifying.",
+    author: "Arthur C. Clarke",
+    category: ["philosophy", "science fiction", "existentialism"],
+  },
+  {
+    id: 13,
+    text: "There is no greater sorrow than to recall in misery the time when we were happy.",
+    author: "Dante Alighieri",
+    category: ["philosophy", "sadness", "wisdom"],
+  },
+  {
+    id: 14,
+    text: "It is easier to build strong children than to repair broken men.",
+    author: "Frederick Douglass",
+    category: ["education", "motivation", "wisdom"],
+  },
+  {
+    id: 15,
+    text: "Fear does not stop death. It stops life.",
+    author: "Vi Keeland",
+    category: ["philosophy", "motivation", "wisdom"],
+  },
+  {
+    id: 16,
+    text: "The most important step a man can take. It's not the first one, is it? It's the next one. Always the next step, Dalinar.",
+    author: "Brandon Sanderson",
+    category: ["motivation", "wisdom", "literature"],
   },
 ];
 
