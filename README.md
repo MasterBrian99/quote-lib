@@ -11,10 +11,12 @@ npm install quote-lib
 ## Usage
 
 ### Random Quote
+
 ```js
 import { getRandomQuote } from "quote-lib";
 console.log(getRandomQuote());
 ```
+
 #### Output
 
 ```bash
@@ -48,7 +50,7 @@ console.log(getQuoteById(5));
 
 ```js
 import { getQuoteByCategory } from "quote-lib";
-console.log(getQuoteByCategory('motivational'));
+console.log(getQuoteByCategory("motivational"));
 ```
 
 #### Output
@@ -99,6 +101,11 @@ console.log(getQuotesByAuthor("Chris Grosser"));
     category: [ 'motivational', 'entrepreneur' ]
   }
 ```
+
 ## License
 
 MIT © [Pasindu P Konghawaththa](https://github.com/MasterBrian99/quote-lib)
+
+## Contributing
+
+please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
