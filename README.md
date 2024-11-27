@@ -1,72 +1,104 @@
-# Quote-lib
+# Quote Lib
 
-#### get a random quote from specific category or from a famous person.
+A simple library for generating quotes.
 
 ## Installation
 
-```sh
-$ npm i quote-lib --save
+```bash
+npm install quote-lib
 ```
 
-##### get a random quote
+## Usage
 
----
-
-```sh
-import {getRandomQuote } from "quote-lib";
+### Random Quote
+```js
+import { getRandomQuote } from "quote-lib";
+console.log(getRandomQuote());
 ```
+#### Output
 
-```sh
-$ const quote=quotes.getRandom();
-$   console.log(getRandomQuote());
-//result
-    {
-        "category": [
-            "motivational",
-            "entrepreneur"
-        ],
-        "quote": "Successful entrepreneurs are givers and not takers of positive energy.",
-        "author": "Anonymous"
-    }
-```
-
-##### get a quote from specific category
-
----
-
-```sh
-$ const quote=quotes.getByCategory('programming');
-$ console.log(quote);
-//result
+```bash
 {
-  category: [ 'programming' ],
-  quote: 'The most disastrous thing that you can ever learn is your first programming language.',
-  author: 'Alan Kay'
+  id: 5,
+  text: "If you can't explain it simply, you don't understand it well enough.",
+  author: 'Albert Einstein',
+  category: [ 'motivational', 'education' ]
 }
 ```
 
-##### get a quote from famous a person
+### Get Quote by ID
 
----
+```js
+import { getQuoteById } from "quote-lib";
+console.log(getQuoteById(5));
+```
 
-```sh
-$ const quote=quotes.getByAuthor('Mahatma Gandhi');
-$ console.log(quote);
-//result
+#### Output
+
+```bash
 {
-  category: [ 'education', 'motivational' ],
-  quote: 'Live as if you were to die tomorrow. Learn as if you were to live forever.',
-  author: 'Mahatma Gandhi'
+  id: 5,
+  text: "If you can't explain it simply, you don't understand it well enough.",
+  author: 'Albert Einstein',
+  category: [ 'motivational', 'education' ]
 }
 ```
 
-## Available Categories
+### Get Quote by Category
 
-> motivational
-> entrepreneur
-> education
-> programming
+```js
+import { getQuoteByCategory } from "quote-lib";
+console.log(getQuoteByCategory('motivational'));
+```
 
-### Pull requests are welcome.
+#### Output
 
-#### please refer the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
+```bash
+ {
+    id: 1,
+    text: "If you can't explain it simply, you don't understand it well enough.",
+    author: 'Albert Einstein',
+    category: [ 'motivational', 'education' ]
+  }
+```
+
+### Get Quotes by Author
+
+```js
+import { getQuotesByAuthor } from "quote-lib";
+console.log(getQuotesByAuthor("Chris Grosser"));
+```
+
+#### Output
+
+```bash
+[
+  {
+    id: 3,
+    text: "Opportunities don't happen, you create them.",
+    author: 'Chris Grosser',
+    category: [ 'motivational', 'entrepreneur' ]
+  }
+]
+```
+
+### Get Quote by Author
+
+```js
+import { getQuoteByAuthor } from "quote-lib";
+console.log(getQuotesByAuthor("Chris Grosser"));
+```
+
+#### Output
+
+```bash
+  {
+    id: 3,
+    text: "Opportunities don't happen, you create them.",
+    author: 'Chris Grosser',
+    category: [ 'motivational', 'entrepreneur' ]
+  }
+```
+## License
+
+MIT © [Pasindu P Konghawaththa](https://github.com/MasterBrian99/quote-lib)
