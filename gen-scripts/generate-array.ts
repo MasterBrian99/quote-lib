@@ -15,10 +15,22 @@ function transformJsonToTsArray(): void {
   try {
     const data = fs.readFileSync(inputFilePath, "utf-8");
 
-    const quotes: QuoteType[] = JSON.parse(data).map((item, index) => {
-      id : index,
-      ...item
-    });
+    const quotes: QuoteType[] = [];
+    const quotesFromJson: QuoteType[] = JSON.parse(data);
+    for (let i = 0; i < quotesFromJson.length; i++) {
+      const quote = quotesFromJson[i];
+      quotes.push({
+        id: i + 1,
+        ...quote,
+      });
+    }
+
+    // const quotes: QuoteType[] = quotesFromJson.map((i, quote) => {
+    //   return {
+    //     id: id,
+    //     ...quote,
+    //   };
+    // });
 
     const tsContent = `export type QuoteType = {
   id: number;

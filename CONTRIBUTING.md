@@ -32,7 +32,7 @@ If you have a new quote that you would like to contribute, please open an issue 
 - Update the `quotes.json` file with the new quote
 - Run `npm run gen:array` and `npm run gen:index` to update the `quotes.ts` file and `indexes.ts` file
 - Check all the tests are passing by running `npm test`
-- Submit a pull request
+- Submit a pull request to the `development` branch
 
 ## Contributing with New Tests
 
@@ -40,14 +40,14 @@ If you have a new test that you would like to contribute, please open an issue o
 
 - Add a new test file in the `lib.test.ts` file
 - Run `npm test` to check if the test is passing
-- Submit a pull request
+- Submit a pull request to the `development` branch
 
 ## Contributing with New Documentation
 
 If you have a new documentation that you would like to contribute, please open an issue or a pull request.
 
 - Update the `README.md` file with the new documentation
-- Submit a pull request
+- Submit a pull request to the `development` branch
 
 ## License
 
